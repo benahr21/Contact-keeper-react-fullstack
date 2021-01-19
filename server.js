@@ -14,10 +14,6 @@ app.use(
   })
 );
 
-app.get('/', (req, res) =>
-  res.json({ msg: 'Welcome to the contact keeper api ' })
-);
-
 //Define Routes
 app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));
